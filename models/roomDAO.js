@@ -1,7 +1,7 @@
 var connection = require('./db')
 
 exports.createRoom =function(data, cb){
-    sql = "INSERT INTO laptop_room (name,is_available,current_user,maximum_user) values(?,true,0,?)";
+    sql = "INSERT INTO laptop_room ( name , is_available , current_user , maximum_user) values(?,1,0,?);";
     values=[data.name, data.maximum_user]
     var resultRoom = connection.query(sql,values, (error,results)=>{
         if(error){

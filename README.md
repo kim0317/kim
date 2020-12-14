@@ -12,7 +12,7 @@
     ```
     - response -
     ```json
-    // 채워넣어
+    {"message" : "login success"}
     ```
 - `POST auth/student/sign-up`
     - request -
@@ -24,7 +24,7 @@
     ```
     - response -
     ```json
-    // 채워넣어
+    {"message" : "sign up success"}
     ```
 ### Techer
 - `POST auth/teacher/login`
@@ -55,7 +55,7 @@
 ## Room
 
 ### room
-- `GET room/` - room list 조회
+- `GET /room` - room list 조회
     - response
     ```json
     {
@@ -75,7 +75,8 @@
         ]
     }
     ```
-- `POST room/` - room 생성
+
+- `POST /room` - room 생성
     - request
     ```json
     {
@@ -85,10 +86,10 @@
     ```
     - response
     ```json
-    // 나중에 채우자!
+    {"message" : "login success"}
     ```
 
-- `GET room/랩실` - room 이름으로 하나 조회
+- `GET /room/랩실` - room 이름으로 하나 조회
     - response
     ```json
     {
@@ -101,7 +102,7 @@
     }
     ```
 
-- `PUT room/reserve/랩실` - 랩실 이름으로 예약
+- `PUT /room/reserve/랩실` - 랩실 이름으로 예약
     - request
     ```json
     {
@@ -110,7 +111,5 @@
     ```
     - response
     ```json
-    {
-        // 다음에추가하자!
-    }
+    {"message" : "success reservation"}
     ```

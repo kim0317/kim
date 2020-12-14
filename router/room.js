@@ -36,10 +36,9 @@ router.post('/', async (req, res) => { // Room 생성
     }
 
     var createdRoom = await new Promise((resolve, reject)=>{
-        user_model.createRoom(data, (results)=>{
+        room_model.createRoom(data, (results)=>{
             resolve(results);
-        }
-        )
+        })
     });
     
     res.status(201)
