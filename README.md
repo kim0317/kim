@@ -23,6 +23,7 @@
     }
     ```
     - response -
+    201
     ```json
     {"message" : "sign up success"}
     ```
@@ -48,6 +49,7 @@
     }
     ```
     - response -
+    201
     ```json
     // 채워넣어
     ```
@@ -85,6 +87,7 @@
     }
     ```
     - response
+    201
     ```json
     {"message" : "login success"}
     ```
